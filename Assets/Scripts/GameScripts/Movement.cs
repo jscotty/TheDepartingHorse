@@ -11,6 +11,8 @@ public class Movement : MonoBehaviour {
 		paused = this.gameObject.GetComponent<Paused> ();
 	}
 
+	private float currentTime;
+
 	void Update(){
 
 		movementSpeed += 0.00000001f;
@@ -18,6 +20,4 @@ public class Movement : MonoBehaviour {
 		transform.Translate (Vector2.right * movementSpeed);
 
 	}
-
-
 }
