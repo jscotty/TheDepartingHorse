@@ -2,14 +2,24 @@
 using System.Collections;
 
 public class DierScript : ObjectScript {
+	public float movementSpeed;
+	private int counter = 0;
+	private bool goToRight = false;
+
 	void Update () {
-		if (transform.position.x == 13f) 
-		{
-			transform.position.x -= 0.01f;
+		if (counter == 0) {
+			goToRight = true;
 		}
-		if (transform.position.x == 6f) 
-		{
-			transform.position.x += 0.01f;
+		if (counter == 101) {
+			goToRight = false;
+		}
+		if (goToRight == true){
+			transform.Translate (Vector2.right * movementSpeed);
+			counter++;
+		}
+		if (goToRight == false) {
+			transform.Translate (Vector2.right * -movementSpeed);
+			counter--;
 		}
 	}
 }
