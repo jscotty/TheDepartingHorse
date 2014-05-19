@@ -10,14 +10,14 @@ public class DierScript : ObjectScript {
 		if (counter == 0) {
 			goToRight = true;
 		}
-		if (counter == 101) {
+		else if (counter == 101) {
 			goToRight = false;
 		}
 		if (goToRight == true){
 			transform.Translate (Vector2.right * movementSpeed);
 			counter++;
 		}
-		if (goToRight == false) {
+		else if (goToRight == false) {
 			transform.Translate (Vector2.right * -movementSpeed);
 			counter--;
 		}
