@@ -260,7 +260,6 @@ GameObject:
   - 61: {fileID: 815180541}
   - 50: {fileID: 815180540}
   - 114: {fileID: 815180542}
-  - 114: {fileID: 815180546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -306,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSpeed: -15
-  paused: {fileID: 0}
+  catching: 0
 --- !u!23 &815180543
 Renderer:
   m_ObjectHideFlags: 0
@@ -346,18 +345,6 @@ Transform:
   m_LocalScale: {x: 4.88000011, y: 2.86999989, z: 1}
   m_Children: []
   m_Father: {fileID: 483385119}
---- !u!114 &815180546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 815180539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a4414fcb9b08354b9122a7c865b7992, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pause: 0
 --- !u!1 &932989339
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +379,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offscreen: -33
   movementSpeed: .0599999987
-  paused: {fileID: 0}
 --- !u!61 &932989341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -467,9 +453,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 954102305}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  - 114: {fileID: 954102306}
+  m_Layer: 8
+  m_Name: Data
+  m_TagString: Data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,10 +468,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 954102304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.8500004, y: -6.96849298, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &954102306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 954102304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585e2156ef7e8fe4b8391a55c0ff291f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1401240504
 Prefab:
   m_ObjectHideFlags: 0
@@ -837,7 +835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offscreen: -30
   movementSpeed: .0599999987
-  paused: {fileID: 0}
 --- !u!114 &2106764245
 MonoBehaviour:
   m_ObjectHideFlags: 0

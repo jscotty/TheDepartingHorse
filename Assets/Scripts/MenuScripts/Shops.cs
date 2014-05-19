@@ -11,10 +11,10 @@ public class Shops : MonoBehaviour {
 	public FlyStore flystore;
 
 	void Start(){
-		powerUpStore = this.gameObject.GetComponent<PowerUpStore> ();	
-		flystore = this.gameObject.GetComponent<FlyStore> ();	
-		runStore = this.gameObject.GetComponent<RunStore> ();	
-		specialStore = this.gameObject.GetComponent<SpecialStore> ();	
+		powerUpStore = GetComponent<PowerUpStore> ();	
+		flystore = GetComponent<FlyStore> ();	
+		runStore = GetComponent<RunStore> ();	
+		specialStore = GetComponent<SpecialStore> ();	
 	}
 	void OnGUI(){
 
