@@ -3,8 +3,12 @@
 --- !u!78 &1
 TagManager:
   tags:
+<<<<<<< HEAD
+  - Data
+=======
   - Obstakel
   - Dier
+>>>>>>> 505f85cab8ff4ecb9ce043be8764c7e6b4189a86
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   Builtin Layer 5: 
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: 
+  User Layer 8: Data
   User Layer 9: 
   User Layer 10: 
   User Layer 11: 
