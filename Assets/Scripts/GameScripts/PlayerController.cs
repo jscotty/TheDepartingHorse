@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour {
 		}else{
 
 		}
-		print (DataClass.paused);
 
 	}
 }
