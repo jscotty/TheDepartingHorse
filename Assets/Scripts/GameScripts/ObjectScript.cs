@@ -7,6 +7,6 @@ public class ObjectScript : MonoBehaviour {
 		if (player.transform.tag == "Player")
 		{
 			Destroy(player.gameObject);
-		} 
+		}
 	}
 }

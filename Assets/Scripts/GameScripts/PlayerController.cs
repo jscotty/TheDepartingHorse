@@ -5,7 +5,9 @@ using System.Collections.Generic;
 public class PlayerController : MonoBehaviour {
 
 	public float jumpSpeed;
-	public bool catching;
+	public static bool catching = false;
+
+	private float time = 0;
 
 	//public DataClass dataClass;
 
@@ -16,7 +18,16 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update(){
-		if(this.transform.position.y <= -10.5) Application.LoadLevel("Menu");
+				if (this.transform.position.y <= -10.5)
+						Application.LoadLevel ("Menu");
+
+		while (catching == true) {
+			time += Time.deltaTime;
+			if (time >= 10)
+			{
+				catching = false;
+			}
+		}
 	}
 	void OnGUI(){
 		if (GUI.RepeatButton (new Rect (10, 50, 150, 100), "Jump!")) {
@@ -24,8 +35,6 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (GUI.RepeatButton (new Rect (10, 250, 150, 100), "Catch!")) {
 			catching = true;
-		}else{
-			catching = false;
 		}
 		if (GUI.Button (new Rect (Screen.width/1 -60, Screen.height /40 , 50, 50), "Pause")){
 			//
@@ -33,5 +42,13 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
+	}
+	
+    void OnCollisionEnter2D(Collision2D animal)
+	{
+		if (animal.transform.tag == "Dier" && catching == true)
+		{
+			Destroy(animal.gameObject);
+		}
 	}
 }
