@@ -3,9 +3,16 @@
 --- !u!78 &1
 TagManager:
   tags:
+<<<<<<< HEAD
   - Data
   - Platform
   - JumpBreak
+=======
+  - Obstakel
+  - Dier
+  - DeathWall
+  - Data
+>>>>>>> 4665b3dceec0531a639a8c0775fe970a24ad0097
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

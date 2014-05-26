@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour {
 	private float currentTime;
 
 	void Update(){
+<<<<<<< HEAD:Assets/Scripts/GameScripts/Controllers/Movement.cs
 		if (DataClass.paused == true) {
 			movementSpeed += 0;		
 		}else{
@@ -20,6 +21,13 @@ public class Movement : MonoBehaviour {
 
 		transform.Translate (Vector2.right * movementSpeed);
 		}
+=======
+			
+		movementSpeed += 0.00001f;
+
+		transform.Translate (Vector2.right * movementSpeed);
+		
+>>>>>>> 4665b3dceec0531a639a8c0775fe970a24ad0097:Assets/Scripts/GameScripts/Movement.cs
 
 
 	}
