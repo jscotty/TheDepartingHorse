@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour {
 
 	void Update(){
 			
-		movementSpeed += 0.00000001f;
+		movementSpeed += 0.00001f;
 
 		transform.Translate (Vector2.right * movementSpeed);
 		

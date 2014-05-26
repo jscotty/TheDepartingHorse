@@ -66,7 +66,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 9.99999975e-05
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offscreen: 30
-  movementSpeed: -.0599999987
+  movementSpeed: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,7 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2633c2b9e77324942b1d71818cc0e545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animal: {fileID: 400000}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

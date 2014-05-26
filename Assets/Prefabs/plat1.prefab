@@ -82,8 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offscreen: -30
-  movementSpeed: .0599999987
-  paused: {fileID: 0}
+  movementSpeed: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

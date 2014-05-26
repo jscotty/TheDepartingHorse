@@ -17,7 +17,7 @@ public class SpawnAnimal : MonoBehaviour {
 	}
 
 	void SpawnTheAnimal(){
-		Vector3 playerLocation = new Vector3 (30, 0, 0);
+		Vector3 playerLocation = new Vector3 (30, 20, 0);
 		Instantiate (animal, playerLocation, transform.rotation);
 	}
 }
