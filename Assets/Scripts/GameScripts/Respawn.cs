@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
+using System.Collections;
 
-public class PlatformSpawn : MonoBehaviour {
+public class Respawn : MonoBehaviour {
 
-	public float offscreen;
-	
-	void Update () 
-	{
+		public float offscreen;
 		
-		while (transform.position.x < offscreen)
+		void Update () 
 		{
-			transform.position = new Vector2(30.95991f,-6.968493f);
+			
+			while (transform.position.x <= offscreen)
+			{
+			transform.position = new Vector2(92.04021f,-7.3f);
+			}
 		}
 	}
-}

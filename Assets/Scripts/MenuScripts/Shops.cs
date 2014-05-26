@@ -11,10 +11,10 @@ public class Shops : MonoBehaviour {
 	public FlyStore flystore;
 
 	void Start(){
-		powerUpStore = this.gameObject.GetComponent<PowerUpStore> ();	
-		flystore = this.gameObject.GetComponent<FlyStore> ();	
-		runStore = this.gameObject.GetComponent<RunStore> ();	
-		specialStore = this.gameObject.GetComponent<SpecialStore> ();	
+		powerUpStore = GetComponent<PowerUpStore> ();	
+		flystore = GetComponent<FlyStore> ();	
+		runStore = GetComponent<RunStore> ();	
+		specialStore = GetComponent<SpecialStore> ();	
 	}
 	void OnGUI(){
 
@@ -35,9 +35,9 @@ public class Shops : MonoBehaviour {
 					specialStore.visible = true;
 					visible = false;
 				}
-				if (GUI.Button (new Rect (400, Screen.height / 2 + 200, 150, 100), "Back to menu")) {
+				/*if (GUI.Button (new Rect (400, Screen.height / 2 + 200, 150, 100), "Back to menu")) {
 						Application.LoadLevel ("Menu");
-				}
+				}*/
 			} else{
 		}
 	}

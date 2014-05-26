@@ -5,19 +5,22 @@ public class Movement : MonoBehaviour {
 	public float offscreen;
 	public float movementSpeed = 0.03f;
 
-	public Paused paused;
 
 	void Start(){
-		paused = this.gameObject.GetComponent<Paused> ();
 	}
 
 	private float currentTime;
 
 	void Update(){
-
-		movementSpeed += 0.00000001f;
+		if (DataClass.paused == true) {
+			movementSpeed += 0;		
+		}else{
+			
+		movementSpeed += 0.000004f;
 
 		transform.Translate (Vector2.right * movementSpeed);
+		}
+
 
 	}
 }

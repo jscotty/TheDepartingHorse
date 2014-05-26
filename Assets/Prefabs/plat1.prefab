@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: plat1
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,9 +26,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 1.25879598e-10, y: .00287978956, z: .999995887, w: -4.37112107e-08}
-  m_LocalPosition: {x: -23.5000439, y: -4.68248558, z: 0}
-  m_LocalScale: {x: 32, y: 3.59525537, z: 1}
+  m_LocalRotation: {x: 0, y: .00287999981, z: .999995887, w: 0}
+  m_LocalPosition: {x: 37.5651436, y: -5.18253708, z: 0}
+  m_LocalScale: {x: 32, y: 3.59525609, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -82,8 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offscreen: -30
-  movementSpeed: .0599999987
-  paused: {fileID: 0}
+  movementSpeed: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
