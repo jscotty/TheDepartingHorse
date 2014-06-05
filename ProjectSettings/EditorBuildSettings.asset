@@ -8,10 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/JustinMenu.unity
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/_scenes/JustinGame.unity
-=======
-    path: Assets/_scenes/Justin Game.unity
->>>>>>> 4665b3dceec0531a639a8c0775fe970a24ad0097
-  - enabled: 1
-    path: Assets/_scenes/JustinShop.unity

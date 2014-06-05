@@ -3,16 +3,13 @@
 --- !u!78 &1
 TagManager:
   tags:
-<<<<<<< HEAD
-  - Data
-  - Platform
-  - JumpBreak
-=======
-  - Obstakel
+  - 
   - Dier
-  - DeathWall
+  - Platform
+  - ScoreText
   - Data
->>>>>>> 4665b3dceec0531a639a8c0775fe970a24ad0097
+  - MeterText
+  - JumpBreak
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -22,7 +19,7 @@ TagManager:
   Builtin Layer 5: 
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Data
+  User Layer 8: 
   User Layer 9: 
   User Layer 10: 
   User Layer 11: 
@@ -50,20 +47,4 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
-    locked: 0
-  - name: Background
-    userID: 1
-    uniqueID: 1554858593
-    locked: 0
-  - name: Platform
-    userID: 2
-    uniqueID: 3147626581
-    locked: 0
-  - name: Player
-    userID: 3
-    uniqueID: 813653365
-    locked: 0
-  - name: Front Background
-    userID: 4
-    uniqueID: 1627551633
     locked: 0

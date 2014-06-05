@@ -10,7 +10,7 @@ public class PlatformSpawn : MonoBehaviour {
 		
 		while (transform.position.x < offscreen)
 		{
-			transform.position = new Vector2(30.95991f,-6.968493f);
+			transform.position = new Vector2(30.95991f,-2.603266f);
 		}
 	}
 }
